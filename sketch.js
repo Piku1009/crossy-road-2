@@ -72,7 +72,9 @@ function draw() {
   if(keyDown("down")){
     player.moveDown();
   }
-
+  if(player.spt.isTouching(logGroup1)||player.spt.isTouching(carGroup1)){
+    player.respwan();
+  }
 
 
   drawSprites();

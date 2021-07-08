@@ -16,7 +16,10 @@ class Player{
     moveDown(){
         this.spt.y=this.spt.y+10;
     }
-    
+    respwan(){
+        this.spt.x=this.spt.x=width/2;
+        this.spt.y=this.spt.y=height+50;
+    }
 
 
 }
